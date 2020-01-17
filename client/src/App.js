@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
   const [num, setNum] = useState(0)
-  console.log(Math.floor(Math.random() * 100000))
 
   function randomNumber() {
-    let randomNum = Math.floor(Math.random() * 100000)
+    let randomNum = Math.floor(Math.random() * 1000000)
     setNum(randomNum)
   }
   return (
